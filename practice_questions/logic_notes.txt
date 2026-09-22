@@ -1,0 +1,41 @@
+factorial:
+
+phle ek variable ko initialize kro.(faact)
+fir dusre variable ko initialize kro jo 1,aur jo number h uski range me. (y)
+fir fact=fact*y
+
+count digits:
+//10 - vo jjese no 58342 hota hai to usko 5834 krta hai
+to jitni br hume yeh krne ki zrurat pdegi >0 pe usko count krlenge 
+
+reverse a number:
+var initialize krenge
+%10- hume last digit deta hai(y) 
+//10- bhi use krenge uss number ko chota krne ke liye 
+fir uss variable ko *10+y de denge
+
+prime number:
+ek var lo ->x
+aur y ko x ki range me lo. 
+agr x%y==0 kahi b hua to prime false 
+else prime true
+
+sum of digits:
+%10 se last digit lo 
+//10 se original number ko chota kro. 
+fir %10 wale digits ko add krte jana. 
+
+palindrome:
+%10 se last digfit lo
+//10- original no ko save krna. 
+fir jese reverse krte h vese krna hai aur fir check krna h ki agr yeh aur jo original tha vo same h agr hai to yes it is plaindrome.
+isme ek original var jisme original value store ho vo krna mt bhoolna kyunki x//10 se hum usse choti kr re hai
+
+star pattern me bs print("*",end="")
+aur fir iske bd print() statement lgana hai range me dal ke
+
+fibonaaci:
+jisme third element uske phle 2 element ka sum hota hai. 
+to hume first or second elemnt jo humesha 0 or 1 se start hite h vo rkhna h fir final=first+second
+aur fir first aur second ko update krna h n ki range me. 
+

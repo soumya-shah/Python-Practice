@@ -1,0 +1,99 @@
+NUMPY: 
+The array object in NumPy is called ndarray.Arrays are very frequently used in data science, where speed and resources are very important.
+
+numpy vs list: 
+speed is the main difference. numpy is way faster than list. 
+numpy is built on c  and c is a low level language so whatever the operations c performs are way much faster than python. 
+
+memory size used by list is heavy then numpy. so numpy is more memory efficient than list. 
+
+numpy allow us to perform direct operations(vectorisation) on numpy arrays. for eg: if we see in the code where we found the start           time;in list we had to write a for loop to perform an operation whereas in numpy we performed the same operation with a one line code. reduce complexity. 
+
+python lists can have multiple data types in 1 whereas numpy can only have same data type. 
+
+built in functions in lists are limited whereas in numpy there are more powerful built-in-functions. \
+
+CREATING NUMPY ARRAY: 
+
+DIMENSIONS OF ARRAY: 
+
+1. 0-D Arrays
+0-D arrays, or Scalars, are the elements in an array. Each value in an array is a 0-D array. array having only one value. 
+eg: arr = np.array(42)
+
+2. 1-D Arrays
+An array that has 0-D arrays as its elements is called uni-dimensional or 1-D array.
+eg: arr = np.array([1, 2, 3, 4, 5])
+
+3. 2-D Arrays
+An array that has 1-D arrays as its elements is called a 2-D array.
+eg: arr = np.array([[1, 2, 3], [4, 5, 6]])
+
+3-D arrays
+An array that has 2-D arrays (matrices) as its elements is called 3-D array.
+eg: arr = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
+
+for a rough theoretical explanation: 
+[] --> 1 dimension
+[[]]--> 2 dimension 
+[[[]]] --> 3 dimension
+
+SLICING ARRAYS: 
+
+Slicing in python means taking elements from one given index to another given index.
+just like in python: [start:end:step]
+The result includes the start index, but excludes the end index.
+
+
+BUILT-IN-FUNCTIONS: 
+1. linspace- to create evenly spaced array between two numbers
+   eg:arr=np.linspace(0,1,5) --> (start,stop,no of values between them)
+2.arange-creates an  array  containing evenly spaced values within a specified interval.
+   eg:np.arange(1,10) --> (start:stop:step)--> used in slicing 
+3.logspace- function returns numbers spaced evenly on a log scale.
+   eg: arr=np.logspace(1,3,3) #logarithmic scale array -->10^1 --> 10^3 ... 3 points  ---> (start power of 10,ending power of 10,no of )
+4.zeros- it lets us create an array full of zeros. 
+   eg: arr=np.zeros(5)--> it will create an array of total 5 zeros
+       arr=np.zeros([2,3]) --> matrix of 2 rows and 3 columns
+5.ones- it lets us create an array full of ones. 
+   eg: arr=np.ones(5)--> it will create an array of total 5 ones. 
+ WE CAN ALSO SPECIFY DTYPE.. arr=np.ones([4,2],dtype=int) 
+6.full-it helps us to create an array of an element of our choice. 
+   eg: arr=np.full(10,2)--> it will create an array of 2s. --> (frequency,element)
+7.empty- uninitialized array--> create an array without setting any values.
+   eg: arr=np.empty([2,3]) - will create an array of the given dimension with 1 as default value
+8.random.rand--> will create an array of  random floats between 1 and 2 that are evenly spaced.for 2-d array we dont use square brackets as it is only taking dimension as input so we will just use normal brackets. 
+   eg:arr=np.random.rand(10)-->create an array of 10 random floats between 1 and 2.,arr=np.random.rand(2,3)
+
+9.random.randn--> it will generate value from a standard normal  distribution meaning the mean of values is always gonna be 0 and standard deviation is always 1.it can generate negative values also. 
+   eg:arr=np.random.randn(2,3)
+10.random.randint--> it will generate random integers.-->(start,stop,size= ) by default 1 value
+   eg: -arr=np.random.randint(10,100,size=(2,3))
+
+
+NUMPY DATA TYPES AND TYPE CASTING:
+The NumPy array object has a property called "dtype" that returns the data type of the array.
+NumPy has some extra data types, and refer to data types with one character, like i for integers, u for unsigned integers etc.
+
+Data Types in Numpy:
+Below is a list of all data types in NumPy and the characters used to represent them.
+
+i - integer
+b - boolean
+u - unsigned integer
+f - float
+c - complex float
+m - timedelta
+M - datetime
+O - object
+S - string
+U - unicode string
+V - fixed chunk of memory for other type ( void )
+
+    if we will not assign any data type then numpy will do it automatically.
+
+Type Casting:
+it is done using function astype()
+whenever we want to convert one data type into another we use type casting. 
+it is going to generate new array with the converted values rather than changing the original array.
+

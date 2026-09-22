@@ -1,0 +1,23 @@
+strings: 
+strip()-remove spaces from starting and ending.
+split()-create spaces 
+reverse a string using slicing- print(str1[::-1])
+title()-> soumya shah will become Soumya Shah
+
+lists:
+list2.append(8)- used to add an element in the ending
+pop and delete yaha use hote hai 
+
+operators:
+diff=abs(int1-int2) -> abs converts into positive
+
+nested lists: ques 20(kuch bhi ni aata)
+
+tuples:
+tuple unpacking directly: 
+tup1=("soumya",22,"jodhpur","intern")
+var1,var2,var3,var4=tup1
+immutable so we cant use pop delete anything. 
+and to create a tuple we must use ("",)else it will treat the single element as a string. 
+
+dictionary:nested didctionaries-> ques 30

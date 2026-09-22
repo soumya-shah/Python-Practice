@@ -1,0 +1,16 @@
+PANDAS 
+
+to deal with heavy data sets we use pandas so that we can extract therelevant info and data from the messy data. It has functions for analyzing, cleaning, exploring, and manipulating data.
+
+it is used to clean data as it has the power to delete irrelevant rows like the rows which contain null values,missing values etc. 
+
+PANDAS SERIES: 
+
+it is used to store data in a one dimensional array of any datatype. its like a column in any table. 
+
+ a = ["soumya","anupam","aditya"]                       0    soumya
+ myvar = pd.Series(a)                                   1    anupam
+                                                        2    Aditya
+
+pd.Series is the function to convert the data into an array. 
+
