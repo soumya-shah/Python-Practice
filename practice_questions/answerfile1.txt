@@ -1,0 +1,3 @@
+my name is soumya
+i am learning python
+i want to become a good developer
