@@ -201,6 +201,7 @@ select * from products;
 select * from orders;
 select * from order_items;
 
+
 CREATE TABLE store_products (
     store_id INT,
     store_name VARCHAR(50),
@@ -217,4 +218,37 @@ VALUES
 (1, 'Apple Store 1', 'AirPods Pro', 2, 500),
 (2, 'Apple Store 2', 'iPhone 13 Pro', 2, 2000),
 (3,"apple store 3","iPhone 13 Pro",4,75000);
+
+CREATE TABLE MONTHLY_SALES (
+    MONTH_NO INT PRIMARY KEY,
+    MONTH VARCHAR(20),
+    SALES INT
+);
+
+INSERT INTO MONTHLY_SALES (MONTH_NO, MONTH, SALES)
+VALUES
+(1, 'January', 10000),
+(2, 'February', 15000),
+(3, 'March', 12000),
+(4, 'April', 20000),
+(5, 'May', 25000);
+
+SELECT * FROM MONTHLY_SALES;
+
+CREATE TABLE department_salary (
+    NAME VARCHAR(50),
+    DEPARTMENT VARCHAR(50),
+    SALARY INT
+);
+
+INSERT INTO department_salary (NAME, DEPARTMENT, SALARY)
+VALUES
+('Aisha', 'IT', 50000),
+('Rahul', 'IT', 60000),
+('Priya', 'IT', 55000),
+('Karan', 'HR', 40000),
+('Neha', 'HR', 50000),
+('Aman', 'HR', 30000);
+
+SELECT * FROM department_salary;
 
